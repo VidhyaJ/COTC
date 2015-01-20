@@ -1,8 +1,6 @@
 package roughwork;
 
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.GregorianCalendar;
 
 public class getcurrentdate {
@@ -23,7 +21,7 @@ public class getcurrentdate {
 	     
 	      System.out.println("Current date is  "+day+"/"+(month+1)+"/"+year);
 	      System.out.println("Current time is  "+hour+" : "+minute+" : "+second);
-	      System.out.println(!(true || false));
+	      //System.out.println(!(true || false));
 	   }
 	}    
 

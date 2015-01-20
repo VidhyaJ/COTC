@@ -12,16 +12,14 @@ import org.testng.Reporter;
 
 public class ErrorUtil {
 	private static Map<ITestResult,List> verificationFailuresMap = new HashMap<ITestResult,List>();
-	private static Map<ITestResult,List> skipMap = new HashMap<ITestResult,List>();
-
-	
-	     public static void addVerificationFailure(Throwable e) {
+	public static void addVerificationFailure(Throwable e) {
 				List<Throwable> verificationFailures = getVerificationFailures();
 				verificationFailuresMap.put(Reporter.getCurrentTestResult(), verificationFailures);
 				verificationFailures.add(e);
 			}
 		  
-		  public static List<Throwable> getVerificationFailures() {
+		  @SuppressWarnings("unchecked")
+		public static List<Throwable> getVerificationFailures() {
 				List<?> verificationFailures = verificationFailuresMap.get(Reporter.getCurrentTestResult());
 				return (List<Throwable>) (verificationFailures == null ? new ArrayList<Object>() : verificationFailures);
 			}

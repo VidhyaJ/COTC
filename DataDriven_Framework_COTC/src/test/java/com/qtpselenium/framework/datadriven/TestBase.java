@@ -42,8 +42,8 @@ public class TestBase {
 	public static Properties prop;
 	public static Logger APPLICATION_LOG = Logger.getLogger("devpinoyLogger");
 	//public static RemoteWebDriver driver=null;
-	public static Set winIds;
-	public static Iterator it;
+	public static Set<?> winIds;
+	public static Iterator<?> it;
 	public static WebDriver driver=null;
 	public static Hashtable<String,String> sessionData = new Hashtable<String,String>();
 	
@@ -338,7 +338,7 @@ public class TestBase {
     
 	public static void closewindows(WebDriver driver) throws IOException{
 		
-		Iterator it= winIds.iterator();
+		Iterator<?> it= winIds.iterator();
 		System.out.println("Inside CloseWindows");
 		String mainwindow=(String) it.next();
 		

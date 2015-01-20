@@ -6,7 +6,6 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -78,7 +77,7 @@ public class SignUpTest extends TestBase{
 		 	   
 		}
 	}
-	
+	@AfterMethod
 	public void close(){
 		if (!(driver==null)){
 		driver.quit();

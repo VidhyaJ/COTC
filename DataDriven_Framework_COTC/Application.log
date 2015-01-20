@@ -1,0 +1,13 @@
+18/09/2014 15:30:30 devpinoyLogger Executing LandingPage Test
+18/09/2014 15:30:30 devpinoyLogger Validating runmode for LandingPageTest in suite LoginSuite
+18/09/2014 15:30:30 devpinoyLogger Skipping the test LandingPageTest inside the suite LoginSuite
+18/09/2014 15:30:30 devpinoyLogger Executing test1
+18/09/2014 15:30:30 devpinoyLogger Validating runmode for LoginTest in suite LoginSuite
+18/09/2014 15:31:50 devpinoyLogger Login Success
+18/09/2014 15:31:50 devpinoyLogger Executing ForgotPasswordTest
+18/09/2014 15:31:50 devpinoyLogger Validating runmode for ForgotPasswordTest in suite LoginSuite
+18/09/2014 15:31:50 devpinoyLogger Skipping the test ForgotPasswordTest inside the suite LoginSuite
+18/09/2014 15:31:51 devpinoyLogger Executing AddGroup Test
+18/09/2014 15:31:51 devpinoyLogger Validating runmode for AddGroupTest in suite ContactsSuite
+18/09/2014 15:32:16 devpinoyLogger Executing AddContact Test
+18/09/2014 15:32:16 devpinoyLogger Validating runmode for AddContactTest in suite ContactsSuite

@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="8" failed="0" total="9" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="My Project" duration-ms="0" started-at="2015-01-20T09:11:25Z" finished-at="2015-01-20T09:11:25Z">
+    <groups>
+    </groups>
+  </suite> <!-- My Project -->
+  <suite name="Login" duration-ms="5130" started-at="2015-01-20T09:11:19Z" finished-at="2015-01-20T09:11:25Z">
+    <groups>
+    </groups>
+    <test name="LandingPageTest" duration-ms="553" started-at="2015-01-20T09:11:19Z" finished-at="2015-01-20T09:11:20Z">
+      <class name="com.qtpselenium.framework.datadriven.Login.LandingPageTest">
+        <test-method status="PASS" signature="initLogs()[pri:0, instance:com.qtpselenium.framework.datadriven.Login.LandingPageTest@1554909b]" name="initLogs" is-config="true" duration-ms="20" started-at="2015-01-20T14:41:19Z" finished-at="2015-01-20T14:41:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initLogs -->
+        <test-method status="SKIP" signature="landingpageTest(java.util.Hashtable)[pri:0, instance:com.qtpselenium.framework.datadriven.Login.LandingPageTest@1554909b]" name="landingpageTest" duration-ms="43" started-at="2015-01-20T14:41:20Z" data-provider="LoginSuiteDataProvider" finished-at="2015-01-20T14:41:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=testing1, Runmode=Y, domainname=vidhyaautomate, Expected_Result=, username=vidhya@i-waves.com, Browser=Mozilla, Result=}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the test : LandingPageTest inside the suite  : LoginSuite]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the test : LandingPageTest inside the suite  : LoginSuite
+	at com.qtpselenium.framework.datadriven.TestBase.validateRunmodes(TestBase.java:93)
+	at com.qtpselenium.framework.datadriven.Login.LandingPageTest.landingpageTest(LandingPageTest.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1220)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- landingpageTest -->
+      </class> <!-- com.qtpselenium.framework.datadriven.Login.LandingPageTest -->
+    </test> <!-- LandingPageTest -->
+    <test name="Support" duration-ms="100" started-at="2015-01-20T09:11:20Z" finished-at="2015-01-20T09:11:20Z">
+      <class name="com.qtpselenium.framework.datadriven.Login.SupportTest">
+        <test-method status="PASS" signature="initLogs()[pri:0, instance:com.qtpselenium.framework.datadriven.Login.SupportTest@4157f54e]" name="initLogs" is-config="true" duration-ms="0" started-at="2015-01-20T14:41:20Z" finished-at="2015-01-20T14:41:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initLogs -->
+        <test-method status="SKIP" signature="supporttest(java.util.Hashtable)[pri:0, instance:com.qtpselenium.framework.datadriven.Login.SupportTest@4157f54e]" name="supporttest" duration-ms="40" started-at="2015-01-20T14:41:20Z" data-provider="LoginSuiteDataProvider" finished-at="2015-01-20T14:41:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=vidhya, Result=, Runmode=Y, Expected_Result=, attachment=N, email=vidhya@i-waves.com, company=Infowave, subject=Automation Testing message1, Browser=Mozilla, message=I am posting a message before login using Automation script and without attachment}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the test : SupportTest inside the suite  : LoginSuite]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the test : SupportTest inside the suite  : LoginSuite
+	at com.qtpselenium.framework.datadriven.TestBase.validateRunmodes(TestBase.java:93)
+	at com.qtpselenium.framework.datadriven.Login.SupportTest.supporttest(SupportTest.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1220)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- supporttest -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.qtpselenium.framework.datadriven.Login.SupportTest@4157f54e]" name="close" is-config="true" duration-ms="0" started-at="2015-01-20T14:41:20Z" finished-at="2015-01-20T14:41:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method status="SKIP" signature="supporttest(java.util.Hashtable)[pri:0, instance:com.qtpselenium.framework.datadriven.Login.SupportTest@4157f54e]" name="supporttest" duration-ms="30" started-at="2015-01-20T14:41:20Z" data-provider="LoginSuiteDataProvider" finished-at="2015-01-20T14:41:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=vidhya, Result=, Runmode=Y, Expected_Result=, attachment=Y, email=vidhya@i-waves.com, company=Infowave, subject=Automation Testing message, Browser=Mozilla, message=I am posting a message before login using Automation script and with attachment}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the test : SupportTest inside the suite  : LoginSuite]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the test : SupportTest inside the suite  : LoginSuite
+	at com.qtpselenium.framework.datadriven.TestBase.validateRunmodes(TestBase.java:93)
+	at com.qtpselenium.framework.datadriven.Login.SupportTest.supporttest(SupportTest.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1220)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- supporttest -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.qtpselenium.framework.datadriven.Login.SupportTest@4157f54e]" name="close" is-config="true" duration-ms="0" started-at="2015-01-20T14:41:20Z" finished-at="2015-01-20T14:41:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.qtpselenium.framework.datadriven.Login.SupportTest -->
+    </test> <!-- Support -->
+    <test name="LoginTest" duration-ms="50" started-at="2015-01-20T09:11:20Z" finished-at="2015-01-20T09:11:20Z">
+      <class name="com.qtpselenium.framework.datadriven.Login.LoginTest">
+        <test-method status="PASS" signature="initLogs()[pri:0, instance:com.qtpselenium.framework.datadriven.Login.LoginTest@617c74e5]" name="initLogs" is-config="true" duration-ms="0" started-at="2015-01-20T14:41:20Z" finished-at="2015-01-20T14:41:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initLogs -->
+        <test-method status="SKIP" signature="logintest(java.util.Hashtable)[pri:0, instance:com.qtpselenium.framework.datadriven.Login.LoginTest@617c74e5]" name="logintest" duration-ms="30" started-at="2015-01-20T14:41:20Z" data-provider="LoginSuiteDataProvider" finished-at="2015-01-20T14:41:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=testing1, Runmode=Y, domainname=vidhyaautomate, Expected_Result=SUCCESS, username=vidhya@i-waves.com, Browser=Mozilla, Result=}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the test : LoginTest inside the suite  : LoginSuite]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the test : LoginTest inside the suite  : LoginSuite
+	at com.qtpselenium.framework.datadriven.TestBase.validateRunmodes(TestBase.java:93)
+	at com.qtpselenium.framework.datadriven.Login.LoginTest.logintest(LoginTest.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1220)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+        <test-method status="PASS" signature="endTime()[pri:0, instance:com.qtpselenium.framework.datadriven.Login.LoginTest@617c74e5]" name="endTime" is-config="true" duration-ms="0" started-at="2015-01-20T14:41:20Z" finished-at="2015-01-20T14:41:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTime -->
+        <test-method status="FAIL" signature="close()[pri:0, instance:com.qtpselenium.framework.datadriven.Login.LoginTest@617c74e5]" name="close" is-config="true" duration-ms="0" started-at="2015-01-20T14:41:20Z" finished-at="2015-01-20T14:41:20Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.qtpselenium.framework.datadriven.Login.LoginTest.close(LoginTest.java:219)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.TestRunner.afterRun(TestRunner.java:1014)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1220)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.qtpselenium.framework.datadriven.Login.LoginTest -->
+    </test> <!-- LoginTest -->
+    <test name="ForgotPassword" duration-ms="50" started-at="2015-01-20T09:11:20Z" finished-at="2015-01-20T09:11:20Z">
+      <class name="com.qtpselenium.framework.datadriven.Login.ForgotPasswordTest">
+        <test-method status="PASS" signature="initLogs()[pri:0, instance:com.qtpselenium.framework.datadriven.Login.ForgotPasswordTest@54a097cc]" name="initLogs" is-config="true" duration-ms="0" started-at="2015-01-20T14:41:20Z" finished-at="2015-01-20T14:41:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initLogs -->
+        <test-method status="SKIP" signature="forgotpasswordtest(java.util.Hashtable)[pri:0, instance:com.qtpselenium.framework.datadriven.Login.ForgotPasswordTest@54a097cc]" name="forgotpasswordtest" duration-ms="30" started-at="2015-01-20T14:41:20Z" data-provider="LoginSuiteDataProvider" finished-at="2015-01-20T14:41:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Runmode=Y, domainname=http://vidhyaautomate.campaignonthecloud.com , username=vidhya@i-waves.com, Browser=Mozilla, Result=}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the test : ForgotPasswordTest inside the suite  : LoginSuite]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the test : ForgotPasswordTest inside the suite  : LoginSuite
+	at com.qtpselenium.framework.datadriven.TestBase.validateRunmodes(TestBase.java:93)
+	at com.qtpselenium.framework.datadriven.Login.ForgotPasswordTest.forgotpasswordtest(ForgotPasswordTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1220)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgotpasswordtest -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.qtpselenium.framework.datadriven.Login.ForgotPasswordTest@54a097cc]" name="close" is-config="true" duration-ms="0" started-at="2015-01-20T14:41:20Z" finished-at="2015-01-20T14:41:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.qtpselenium.framework.datadriven.Login.ForgotPasswordTest -->
+    </test> <!-- ForgotPassword -->
+    <test name="SignUp" duration-ms="120" started-at="2015-01-20T09:11:20Z" finished-at="2015-01-20T09:11:20Z">
+      <class name="com.qtpselenium.framework.datadriven.Login.SignUpTest">
+        <test-method status="PASS" signature="initLogs()[pri:0, instance:com.qtpselenium.framework.datadriven.Login.SignUpTest@234bef66]" name="initLogs" is-config="true" duration-ms="10" started-at="2015-01-20T14:41:20Z" finished-at="2015-01-20T14:41:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initLogs -->
+        <test-method status="SKIP" signature="signuptest(java.util.Hashtable)[pri:0, instance:com.qtpselenium.framework.datadriven.Login.SignUpTest@234bef66]" name="signuptest" duration-ms="20" started-at="2015-01-20T14:41:20Z" data-provider="LoginSuiteDataProvider" finished-at="2015-01-20T14:41:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=vidhya, Runmode=Y, domainname=vidhyaautomat1, Expected_Result=FAILURE, username=vidhya@.com, Browser=Mozilla, Result=}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the test : SignUpTest inside the suite  : LoginSuite]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the test : SignUpTest inside the suite  : LoginSuite
+	at com.qtpselenium.framework.datadriven.TestBase.validateRunmodes(TestBase.java:93)
+	at com.qtpselenium.framework.datadriven.Login.SignUpTest.signuptest(SignUpTest.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1220)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signuptest -->
+        <test-method status="SKIP" signature="signuptest(java.util.Hashtable)[pri:0, instance:com.qtpselenium.framework.datadriven.Login.SignUpTest@234bef66]" name="signuptest" duration-ms="30" started-at="2015-01-20T14:41:20Z" data-provider="LoginSuiteDataProvider" finished-at="2015-01-20T14:41:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=vidhya, Runmode=Y, domainname=vidhyaautomate, Expected_Result=FAILURE, username=vidhya@.com, Browser=Mozilla, Result=}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the test : SignUpTest inside the suite  : LoginSuite]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the test : SignUpTest inside the suite  : LoginSuite
+	at com.qtpselenium.framework.datadriven.TestBase.validateRunmodes(TestBase.java:93)
+	at com.qtpselenium.framework.datadriven.Login.SignUpTest.signuptest(SignUpTest.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1220)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signuptest -->
+        <test-method status="SKIP" signature="signuptest(java.util.Hashtable)[pri:0, instance:com.qtpselenium.framework.datadriven.Login.SignUpTest@234bef66]" name="signuptest" duration-ms="30" started-at="2015-01-20T14:41:20Z" data-provider="LoginSuiteDataProvider" finished-at="2015-01-20T14:41:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=vidhya, Runmode=Y, domainname=vidhyaautomat2, Expected_Result=SUCCESS, username=vidhya@i-waves.com, Browser=Mozilla, Result=}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the test : SignUpTest inside the suite  : LoginSuite]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the test : SignUpTest inside the suite  : LoginSuite
+	at com.qtpselenium.framework.datadriven.TestBase.validateRunmodes(TestBase.java:93)
+	at com.qtpselenium.framework.datadriven.Login.SignUpTest.signuptest(SignUpTest.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1220)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signuptest -->
+        <test-method status="FAIL" signature="close()[pri:0, instance:com.qtpselenium.framework.datadriven.Login.SignUpTest@234bef66]" name="close" is-config="true" duration-ms="0" started-at="2015-01-20T14:41:20Z" finished-at="2015-01-20T14:41:20Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.qtpselenium.framework.datadriven.Login.SignUpTest.close(SignUpTest.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.TestRunner.afterRun(TestRunner.java:1014)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1220)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method status="PASS" signature="endTime()[pri:0, instance:com.qtpselenium.framework.datadriven.Login.SignUpTest@234bef66]" name="endTime" is-config="true" duration-ms="0" started-at="2015-01-20T14:41:20Z" finished-at="2015-01-20T14:41:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTime -->
+      </class> <!-- com.qtpselenium.framework.datadriven.Login.SignUpTest -->
+    </test> <!-- SignUp -->
+    <test name="Sendmail" duration-ms="4217" started-at="2015-01-20T09:11:20Z" finished-at="2015-01-20T09:11:25Z">
+      <class name="com.qtpselenium.framework.datadriven.util.SendMailTest">
+        <test-method status="PASS" signature="sendmailtest()[pri:0, instance:com.qtpselenium.framework.datadriven.util.SendMailTest@5afa04c]" name="sendmailtest" duration-ms="4217" started-at="2015-01-20T14:41:20Z" finished-at="2015-01-20T14:41:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendmailtest -->
+      </class> <!-- com.qtpselenium.framework.datadriven.util.SendMailTest -->
+    </test> <!-- Sendmail -->
+  </suite> <!-- Login -->
+</testng-results>

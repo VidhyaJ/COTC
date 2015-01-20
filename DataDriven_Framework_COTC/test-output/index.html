@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">2 suites</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Login">
+              <span class="suite-name border-skipped">Login</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Login">
+                    <span>C:\Users\Vidhya\workspace\Trial\DataDriven_Framework_COTC\src\test\resources\Login.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Login">
+                    <span class="test-stats">6 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Login">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Login">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Login">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Login">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Login">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">9 methods,  8 skipped,  1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Login" class="hide-methods skipped suite-Login"> (hide)</a> <!-- hide-methods skipped suite-Login -->
+                      <a href="#" panel-name="suite-Login" class="show-methods skipped suite-Login"> (show)</a> <!-- show-methods skipped suite-Login -->
+                    </span>
+                    <div class="method-list-content skipped suite-Login">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Login" title="com.qtpselenium.framework.datadriven.Login.ForgotPasswordTest" hash-for-method="forgotpasswordtest({Runmode=Y, domainname=http://vidhyaautomate.campaignonthecloud.com , username=vidhya@i-waves.com, B...)">forgotpasswordtest({Runmode=Y, domainname=http://vidhyaautomate.campaignonthecloud.com , username=vidhya@i-waves.com, B...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Login" title="com.qtpselenium.framework.datadriven.Login.LandingPageTest" hash-for-method="landingpageTest({password=testing1, Runmode=Y, domainname=vidhyaautomate, Expected_Result=, username=vidhya@i-waves....)">landingpageTest({password=testing1, Runmode=Y, domainname=vidhyaautomate, Expected_Result=, username=vidhya@i-waves....)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Login" title="com.qtpselenium.framework.datadriven.Login.LoginTest" hash-for-method="logintest({password=testing1, Runmode=Y, domainname=vidhyaautomate, Expected_Result=SUCCESS, username=vidhya@i...)">logintest({password=testing1, Runmode=Y, domainname=vidhyaautomate, Expected_Result=SUCCESS, username=vidhya@i...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Login" title="com.qtpselenium.framework.datadriven.Login.SignUpTest" hash-for-method="signuptest({name=vidhya, Runmode=Y, domainname=vidhyaautomat1, Expected_Result=FAILURE, username=vidhya@.com, B...)">signuptest({name=vidhya, Runmode=Y, domainname=vidhyaautomat1, Expected_Result=FAILURE, username=vidhya@.com, B...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Login" title="com.qtpselenium.framework.datadriven.Login.SignUpTest" hash-for-method="signuptest({name=vidhya, Runmode=Y, domainname=vidhyaautomat2, Expected_Result=SUCCESS, username=vidhya@i-waves...)">signuptest({name=vidhya, Runmode=Y, domainname=vidhyaautomat2, Expected_Result=SUCCESS, username=vidhya@i-waves...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Login" title="com.qtpselenium.framework.datadriven.Login.SignUpTest" hash-for-method="signuptest({name=vidhya, Runmode=Y, domainname=vidhyaautomate, Expected_Result=FAILURE, username=vidhya@.com, B...)">signuptest({name=vidhya, Runmode=Y, domainname=vidhyaautomate, Expected_Result=FAILURE, username=vidhya@.com, B...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Login" title="com.qtpselenium.framework.datadriven.Login.SupportTest" hash-for-method="supporttest({name=vidhya, Result=, Runmode=Y, Expected_Result=, attachment=N, email=vidhya@i-waves.com, company=...)">supporttest({name=vidhya, Result=, Runmode=Y, Expected_Result=, attachment=N, email=vidhya@i-waves.com, company=...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Login" title="com.qtpselenium.framework.datadriven.Login.SupportTest" hash-for-method="supporttest({name=vidhya, Result=, Runmode=Y, Expected_Result=, attachment=Y, email=vidhya@i-waves.com, company=...)">supporttest({name=vidhya, Result=, Runmode=Y, Expected_Result=, attachment=Y, email=vidhya@i-waves.com, company=...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Login -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Login" class="hide-methods passed suite-Login"> (hide)</a> <!-- hide-methods passed suite-Login -->
+                      <a href="#" panel-name="suite-Login" class="show-methods passed suite-Login"> (show)</a> <!-- show-methods passed suite-Login -->
+                    </span>
+                    <div class="method-list-content passed suite-Login">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Login" title="com.qtpselenium.framework.datadriven.util.SendMailTest" hash-for-method="sendmailtest">sendmailtest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Login -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-My_Project" class="panel My_Project">
+        </div> <!-- panel My_Project -->
+        <div panel-name="suite-Login" class="panel Login">
+          <div class="suite-Login-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.qtpselenium.framework.datadriven.Login.LandingPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="landingpageTest({password=testing1, Runmode=Y, domainname=vidhyaautomate, Expected_Result=, username=vidhya@i-waves....)">
+                  </a> <!-- landingpageTest({password=testing1, Runmode=Y, domainname=vidhyaautomate, Expected_Result=, username=vidhya@i-waves....) -->
+                  <span class="method-name">landingpageTest</span>
+                  <span class="parameters">({password=testing1, Runmode=Y, domainname=vidhyaautomate, Expected_Result=, username=vidhya@i-waves.com, Browser=Mozilla, Result=})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the test : LandingPageTest inside the suite  : LoginSuite
+	at com.qtpselenium.framework.datadriven.TestBase.validateRunmodes(TestBase.java:93)
+	at com.qtpselenium.framework.datadriven.Login.LandingPageTest.landingpageTest(LandingPageTest.java:52)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Login-class-skipped -->
+          <div class="suite-Login-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.qtpselenium.framework.datadriven.Login.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="logintest({password=testing1, Runmode=Y, domainname=vidhyaautomate, Expected_Result=SUCCESS, username=vidhya@i...)">
+                  </a> <!-- logintest({password=testing1, Runmode=Y, domainname=vidhyaautomate, Expected_Result=SUCCESS, username=vidhya@i...) -->
+                  <span class="method-name">logintest</span>
+                  <span class="parameters">({password=testing1, Runmode=Y, domainname=vidhyaautomate, Expected_Result=SUCCESS, username=vidhya@i-waves.com, Browser=Mozilla, Result=})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the test : LoginTest inside the suite  : LoginSuite
+	at com.qtpselenium.framework.datadriven.TestBase.validateRunmodes(TestBase.java:93)
+	at com.qtpselenium.framework.datadriven.Login.LoginTest.logintest(LoginTest.java:32)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Login-class-skipped -->
+          <div class="suite-Login-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.qtpselenium.framework.datadriven.Login.ForgotPasswordTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="forgotpasswordtest({Runmode=Y, domainname=http://vidhyaautomate.campaignonthecloud.com , username=vidhya@i-waves.com, B...)">
+                  </a> <!-- forgotpasswordtest({Runmode=Y, domainname=http://vidhyaautomate.campaignonthecloud.com , username=vidhya@i-waves.com, B...) -->
+                  <span class="method-name">forgotpasswordtest</span>
+                  <span class="parameters">({Runmode=Y, domainname=http://vidhyaautomate.campaignonthecloud.com , username=vidhya@i-waves.com, Browser=Mozilla, Result=})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the test : ForgotPasswordTest inside the suite  : LoginSuite
+	at com.qtpselenium.framework.datadriven.TestBase.validateRunmodes(TestBase.java:93)
+	at com.qtpselenium.framework.datadriven.Login.ForgotPasswordTest.forgotpasswordtest(ForgotPasswordTest.java:29)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Login-class-skipped -->
+          <div class="suite-Login-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.qtpselenium.framework.datadriven.Login.SupportTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="supporttest({name=vidhya, Result=, Runmode=Y, Expected_Result=, attachment=N, email=vidhya@i-waves.com, company=...)">
+                  </a> <!-- supporttest({name=vidhya, Result=, Runmode=Y, Expected_Result=, attachment=N, email=vidhya@i-waves.com, company=...) -->
+                  <span class="method-name">supporttest</span>
+                  <span class="parameters">({name=vidhya, Result=, Runmode=Y, Expected_Result=, attachment=N, email=vidhya@i-waves.com, company=Infowave, subject=Automation Testing message1, Browser=Mozilla, message=I am posting a message before login using Automation script and without attachment})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the test : SupportTest inside the suite  : LoginSuite
+	at com.qtpselenium.framework.datadriven.TestBase.validateRunmodes(TestBase.java:93)
+	at com.qtpselenium.framework.datadriven.Login.SupportTest.supporttest(SupportTest.java:33)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="supporttest({name=vidhya, Result=, Runmode=Y, Expected_Result=, attachment=Y, email=vidhya@i-waves.com, company=...)">
+                  </a> <!-- supporttest({name=vidhya, Result=, Runmode=Y, Expected_Result=, attachment=Y, email=vidhya@i-waves.com, company=...) -->
+                  <span class="method-name">supporttest</span>
+                  <span class="parameters">({name=vidhya, Result=, Runmode=Y, Expected_Result=, attachment=Y, email=vidhya@i-waves.com, company=Infowave, subject=Automation Testing message, Browser=Mozilla, message=I am posting a message before login using Automation script and with attachment})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the test : SupportTest inside the suite  : LoginSuite
+	at com.qtpselenium.framework.datadriven.TestBase.validateRunmodes(TestBase.java:93)
+	at com.qtpselenium.framework.datadriven.Login.SupportTest.supporttest(SupportTest.java:33)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Login-class-skipped -->
+          <div class="suite-Login-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.qtpselenium.framework.datadriven.Login.SignUpTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="signuptest({name=vidhya, Runmode=Y, domainname=vidhyaautomat1, Expected_Result=FAILURE, username=vidhya@.com, B...)">
+                  </a> <!-- signuptest({name=vidhya, Runmode=Y, domainname=vidhyaautomat1, Expected_Result=FAILURE, username=vidhya@.com, B...) -->
+                  <span class="method-name">signuptest</span>
+                  <span class="parameters">({name=vidhya, Runmode=Y, domainname=vidhyaautomat1, Expected_Result=FAILURE, username=vidhya@.com, Browser=Mozilla, Result=})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the test : SignUpTest inside the suite  : LoginSuite
+	at com.qtpselenium.framework.datadriven.TestBase.validateRunmodes(TestBase.java:93)
+	at com.qtpselenium.framework.datadriven.Login.SignUpTest.signuptest(SignUpTest.java:32)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signuptest({name=vidhya, Runmode=Y, domainname=vidhyaautomat2, Expected_Result=SUCCESS, username=vidhya@i-waves...)">
+                  </a> <!-- signuptest({name=vidhya, Runmode=Y, domainname=vidhyaautomat2, Expected_Result=SUCCESS, username=vidhya@i-waves...) -->
+                  <span class="method-name">signuptest</span>
+                  <span class="parameters">({name=vidhya, Runmode=Y, domainname=vidhyaautomat2, Expected_Result=SUCCESS, username=vidhya@i-waves.com, Browser=Mozilla, Result=})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the test : SignUpTest inside the suite  : LoginSuite
+	at com.qtpselenium.framework.datadriven.TestBase.validateRunmodes(TestBase.java:93)
+	at com.qtpselenium.framework.datadriven.Login.SignUpTest.signuptest(SignUpTest.java:32)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signuptest({name=vidhya, Runmode=Y, domainname=vidhyaautomate, Expected_Result=FAILURE, username=vidhya@.com, B...)">
+                  </a> <!-- signuptest({name=vidhya, Runmode=Y, domainname=vidhyaautomate, Expected_Result=FAILURE, username=vidhya@.com, B...) -->
+                  <span class="method-name">signuptest</span>
+                  <span class="parameters">({name=vidhya, Runmode=Y, domainname=vidhyaautomate, Expected_Result=FAILURE, username=vidhya@.com, Browser=Mozilla, Result=})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the test : SignUpTest inside the suite  : LoginSuite
+	at com.qtpselenium.framework.datadriven.TestBase.validateRunmodes(TestBase.java:93)
+	at com.qtpselenium.framework.datadriven.Login.SignUpTest.signuptest(SignUpTest.java:32)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Login-class-skipped -->
+          <div class="suite-Login-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qtpselenium.framework.datadriven.util.SendMailTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="sendmailtest">
+                  </a> <!-- sendmailtest -->
+                  <span class="method-name">sendmailtest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Login-class-passed -->
+        </div> <!-- panel Login -->
+        <div panel-name="test-xml-My_Project" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Vidhya\workspace\Trial\DataDriven_Framework_COTC\src\test\resources\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;My Project&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.qtpselenium.framework.datadriven.CustomListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;suite-files&gt;
+    &lt;suite-file path=&quot;./Login.xml&quot;/&gt;
+  &lt;/suite-files&gt;
+&lt;/suite&gt; &lt;!-- My Project --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="test-xml-Login" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Vidhya\workspace\Trial\DataDriven_Framework_COTC\src\test\resources\Login.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Login&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.qtpselenium.framework.datadriven.CustomListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;LandingPageTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qtpselenium.framework.datadriven.Login.LandingPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- LandingPageTest --&gt;
+  &lt;test name=&quot;Support&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qtpselenium.framework.datadriven.Login.SupportTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Support --&gt;
+  &lt;test name=&quot;LoginTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qtpselenium.framework.datadriven.Login.LoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- LoginTest --&gt;
+  &lt;test name=&quot;ForgotPassword&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qtpselenium.framework.datadriven.Login.ForgotPasswordTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ForgotPassword --&gt;
+  &lt;test name=&quot;SignUp&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qtpselenium.framework.datadriven.Login.SignUpTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SignUp --&gt;
+  &lt;test name=&quot;Sendmail&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qtpselenium.framework.datadriven.util.SendMailTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Sendmail --&gt;
+&lt;/suite&gt; &lt;!-- Login --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-My_Project" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for My Project</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Login" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Login</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">LandingPageTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Support (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">LoginTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">ForgotPassword (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">SignUp (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Sendmail (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-My_Project" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for My Project</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Login" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Login</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-My_Project" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for My Project</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_My_Project');
+function tableData_My_Project() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(0);
+window.suiteTableData['My_Project']= { tableData: data, tableDiv: 'times-div-My_Project'}
+return data;
+}
+              </script>
+              <div id="times-div-My_Project">
+              </div> <!-- times-div-My_Project -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Login" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Login</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Login');
+function tableData_Login() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(9);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'sendmailtest')
+data.setCell(0, 2, 'com.qtpselenium.framework.datadriven.util.SendMailTest')
+data.setCell(0, 3, 4217);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'landingpageTest')
+data.setCell(1, 2, 'com.qtpselenium.framework.datadriven.Login.LandingPageTest')
+data.setCell(1, 3, 43);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'supporttest')
+data.setCell(2, 2, 'com.qtpselenium.framework.datadriven.Login.SupportTest')
+data.setCell(2, 3, 40);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'supporttest')
+data.setCell(3, 2, 'com.qtpselenium.framework.datadriven.Login.SupportTest')
+data.setCell(3, 3, 30);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'logintest')
+data.setCell(4, 2, 'com.qtpselenium.framework.datadriven.Login.LoginTest')
+data.setCell(4, 3, 30);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'forgotpasswordtest')
+data.setCell(5, 2, 'com.qtpselenium.framework.datadriven.Login.ForgotPasswordTest')
+data.setCell(5, 3, 30);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'signuptest')
+data.setCell(6, 2, 'com.qtpselenium.framework.datadriven.Login.SignUpTest')
+data.setCell(6, 3, 30);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'signuptest')
+data.setCell(7, 2, 'com.qtpselenium.framework.datadriven.Login.SignUpTest')
+data.setCell(7, 3, 30);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'signuptest')
+data.setCell(8, 2, 'com.qtpselenium.framework.datadriven.Login.SignUpTest')
+data.setCell(8, 3, 20);
+window.suiteTableData['Login']= { tableData: data, tableDiv: 'times-div-Login'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <div id="times-div-Login">
+              </div> <!-- times-div-Login -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-My_Project" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for My Project</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Login" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Login</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-My_Project" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Login" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-My_Project" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qtpselenium.framework.datadriven.Login.LandingPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initLogs</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">landingpageTest({password=testing1, Runmode=Y, domainname=vidhyaautomate, Expected_Result=, username=vidhya@i-waves....)</span>
+                <span class="method-start">510 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qtpselenium.framework.datadriven.Login.SupportTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initLogs</span>
+                <span class="method-start">573 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">supporttest({name=vidhya, Result=, Runmode=Y, Expected_Result=, attachment=N, email=vidhya@i-waves.com, company=...)</span>
+                <span class="method-start">603 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">643 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">supporttest({name=vidhya, Result=, Runmode=Y, Expected_Result=, attachment=Y, email=vidhya@i-waves.com, company=...)</span>
+                <span class="method-start">643 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">673 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qtpselenium.framework.datadriven.Login.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initLogs</span>
+                <span class="method-start">683 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">logintest({password=testing1, Runmode=Y, domainname=vidhyaautomate, Expected_Result=SUCCESS, username=vidhya@i...)</span>
+                <span class="method-start">703 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">endTime</span>
+                <span class="method-start">733 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-test after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">close</span>
+                <span class="method-start">733 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qtpselenium.framework.datadriven.Login.ForgotPasswordTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initLogs</span>
+                <span class="method-start">743 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">forgotpasswordtest({Runmode=Y, domainname=http://vidhyaautomate.campaignonthecloud.com , username=vidhya@i-waves.com, B...)</span>
+                <span class="method-start">763 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">793 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qtpselenium.framework.datadriven.Login.SignUpTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initLogs</span>
+                <span class="method-start">793 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">signuptest({name=vidhya, Runmode=Y, domainname=vidhyaautomat1, Expected_Result=FAILURE, username=vidhya@.com, B...)</span>
+                <span class="method-start">823 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">signuptest({name=vidhya, Runmode=Y, domainname=vidhyaautomate, Expected_Result=FAILURE, username=vidhya@.com, B...)</span>
+                <span class="method-start">843 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">signuptest({name=vidhya, Runmode=Y, domainname=vidhyaautomat2, Expected_Result=SUCCESS, username=vidhya@i-waves...)</span>
+                <span class="method-start">873 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">endTime</span>
+                <span class="method-start">903 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-test after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">close</span>
+                <span class="method-start">903 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qtpselenium.framework.datadriven.util.SendMailTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">sendmailtest</span>
+                <span class="method-start">913 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Login" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qtpselenium.framework.datadriven.Login.LandingPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initLogs</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">landingpageTest({password=testing1, Runmode=Y, domainname=vidhyaautomate, Expected_Result=, username=vidhya@i-waves....)</span>
+                <span class="method-start">510 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qtpselenium.framework.datadriven.Login.SupportTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initLogs</span>
+                <span class="method-start">573 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">supporttest({name=vidhya, Result=, Runmode=Y, Expected_Result=, attachment=N, email=vidhya@i-waves.com, company=...)</span>
+                <span class="method-start">603 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">643 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">supporttest({name=vidhya, Result=, Runmode=Y, Expected_Result=, attachment=Y, email=vidhya@i-waves.com, company=...)</span>
+                <span class="method-start">643 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">673 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qtpselenium.framework.datadriven.Login.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initLogs</span>
+                <span class="method-start">683 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">logintest({password=testing1, Runmode=Y, domainname=vidhyaautomate, Expected_Result=SUCCESS, username=vidhya@i...)</span>
+                <span class="method-start">703 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">close</span>
+                <span class="method-start">733 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-class after">
+                <span class="method-name">endTime</span>
+                <span class="method-start">733 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qtpselenium.framework.datadriven.Login.ForgotPasswordTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initLogs</span>
+                <span class="method-start">743 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">forgotpasswordtest({Runmode=Y, domainname=http://vidhyaautomate.campaignonthecloud.com , username=vidhya@i-waves.com, B...)</span>
+                <span class="method-start">763 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">793 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qtpselenium.framework.datadriven.Login.SignUpTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initLogs</span>
+                <span class="method-start">793 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">signuptest({name=vidhya, Runmode=Y, domainname=vidhyaautomat1, Expected_Result=FAILURE, username=vidhya@.com, B...)</span>
+                <span class="method-start">823 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">signuptest({name=vidhya, Runmode=Y, domainname=vidhyaautomate, Expected_Result=FAILURE, username=vidhya@.com, B...)</span>
+                <span class="method-start">843 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">signuptest({name=vidhya, Runmode=Y, domainname=vidhyaautomat2, Expected_Result=SUCCESS, username=vidhya@i-waves...)</span>
+                <span class="method-start">873 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">close</span>
+                <span class="method-start">903 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-class after">
+                <span class="method-name">endTime</span>
+                <span class="method-start">903 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qtpselenium.framework.datadriven.util.SendMailTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">sendmailtest</span>
+                <span class="method-start">913 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

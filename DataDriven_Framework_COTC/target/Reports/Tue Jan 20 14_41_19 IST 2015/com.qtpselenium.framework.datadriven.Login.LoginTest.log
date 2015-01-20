@@ -1,0 +1,7 @@
+2015-01-20 14:41:20,577 DEBUG [LoginTest] Login Regression Test Start Date/Time 
+2015-01-20 14:41:20,577 DEBUG [LoginTest] Current date is  20/1/2015 Current time is  2 : 41 : 20
+2015-01-20 14:41:20,597 DEBUG [LoginTest] Executing Login Test
+2015-01-20 14:41:20,597 DEBUG [LoginTest] Validating runmode for : LoginTest in suite LoginSuite
+2015-01-20 14:41:20,627 DEBUG [LoginTest] Skipping the test : LoginTest inside the suite  : LoginSuite
+2015-01-20 14:41:20,627 DEBUG [LoginTest] Login Regression Test End Date/Time 
+2015-01-20 14:41:20,627 DEBUG [LoginTest] Current date is  20/1/2015 Current time is  2 : 41 : 20

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="Lenovo-PC" name="com.qtpselenium.framework.datadriven.Login.SignUpTest" tests="3" failures="0" timestamp="20 Jan 2015 09:13:26 GMT" time="0.1" errors="0">
+  <testcase name="signuptest" time="0.03" classname="com.qtpselenium.framework.datadriven.Login.SignUpTest">
+    <skipped/>
+  </testcase>
+  <testcase name="signuptest" time="0.03" classname="com.qtpselenium.framework.datadriven.Login.SignUpTest">
+    <skipped/>
+  </testcase>
+  <testcase name="signuptest" time="0.02" classname="com.qtpselenium.framework.datadriven.Login.SignUpTest">
+    <skipped/>
+  </testcase>
+</testsuite>

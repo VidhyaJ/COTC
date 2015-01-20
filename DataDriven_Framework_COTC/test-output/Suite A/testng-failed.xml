@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite A]">
+  <listeners>
+    <listener class-name="com.qtpselenium.framework.datadriven.CustomListener"/>
+  </listeners>
+  <test name="LandingPageTest(failed)">
+    <classes>
+      <class name="com.qtpselenium.framework.datadriven.Login.LandingPageTest">
+        <methods>
+          <include name="landingpageTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.Login.LandingPageTest -->
+    </classes>
+  </test> <!-- LandingPageTest(failed) -->
+  <test name="ForgotPassword(failed)">
+    <classes>
+      <class name="com.qtpselenium.framework.datadriven.Login.ForgotPasswordTest">
+        <methods>
+          <include name="forgotpasswordtest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.Login.ForgotPasswordTest -->
+    </classes>
+  </test> <!-- ForgotPassword(failed) -->
+</suite> <!-- Failed suite [Suite A] -->

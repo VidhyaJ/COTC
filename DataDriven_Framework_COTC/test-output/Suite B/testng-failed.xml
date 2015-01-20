@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite B]">
+  <listeners>
+    <listener class-name="com.qtpselenium.framework.datadriven.CustomListener"/>
+  </listeners>
+  <test name="Add Group Test(failed)">
+    <classes>
+      <class name="com.qtpselenium.framework.datadriven.Contacts.AddGroupTest">
+        <methods>
+          <include name="addgrouptest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.Contacts.AddGroupTest -->
+    </classes>
+  </test> <!-- Add Group Test(failed) -->
+  <test name="Add Contact Test(failed)">
+    <classes>
+      <class name="com.qtpselenium.framework.datadriven.Contacts.AddContactTest">
+        <methods>
+          <include name="addcontacttest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.Contacts.AddContactTest -->
+    </classes>
+  </test> <!-- Add Contact Test(failed) -->
+</suite> <!-- Failed suite [Suite B] -->

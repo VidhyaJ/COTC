@@ -1,0 +1,10 @@
+2015-01-20 14:40:38,753 DEBUG [SignUpTest] Sign Up Regression Test Start Date/Time 
+2015-01-20 14:40:38,753 DEBUG [SignUpTest] Current date is  20/1/2015 Current time is  2 : 40 : 38
+2015-01-20 14:40:38,773 DEBUG [SignUpTest] Validating runmode for : SignUpTest in suite LoginSuite
+2015-01-20 14:40:38,793 DEBUG [SignUpTest] Skipping the test : SignUpTest inside the suite  : LoginSuite
+2015-01-20 14:40:38,793 DEBUG [SignUpTest] Validating runmode for : SignUpTest in suite LoginSuite
+2015-01-20 14:40:38,813 DEBUG [SignUpTest] Skipping the test : SignUpTest inside the suite  : LoginSuite
+2015-01-20 14:40:38,813 DEBUG [SignUpTest] Validating runmode for : SignUpTest in suite LoginSuite
+2015-01-20 14:40:38,833 DEBUG [SignUpTest] Skipping the test : SignUpTest inside the suite  : LoginSuite
+2015-01-20 14:40:38,843 DEBUG [SignUpTest]  Sign Up Regression Test End Date/Time 
+2015-01-20 14:40:38,843 DEBUG [SignUpTest] Current date is  20/1/2015 Current time is  2 : 40 : 38

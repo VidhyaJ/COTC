@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Contacts">
+
+
+
+<test name="Add Group Test">
+    <classes>
+        <class name="com.qtpselenium.framework.datadriven.Contacts.AddGroupTest" ></class>  
+    </classes>
+</test>
+
+<test name="Add Contact Test">
+    <classes>
+        <class name="com.qtpselenium.framework.datadriven.Contacts.AddContactTest" ></class>  
+    </classes>
+</test>
+
+<test name="Delete Group Test">
+    <classes>
+        <class name="com.qtpselenium.framework.datadriven.Contacts.DeleteGroupTest" ></class>  
+    </classes>
+</test>
+
+</suite>
+

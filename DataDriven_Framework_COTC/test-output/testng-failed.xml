@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Login]">
+  <listeners>
+    <listener class-name="com.qtpselenium.framework.datadriven.CustomListener"/>
+  </listeners>
+  <test name="LandingPageTest(failed)">
+    <classes>
+      <class name="com.qtpselenium.framework.datadriven.Login.LandingPageTest">
+        <methods>
+          <include name="landingpageTest" invocation-numbers="0"/>
+          <include name="initLogs"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.Login.LandingPageTest -->
+      <class name="com.qtpselenium.framework.datadriven.Login.LoginTest">
+        <methods>
+          <include name="close"/>
+          <include name="endTime"/>
+          <include name="initLogs"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.Login.LoginTest -->
+      <class name="com.qtpselenium.framework.datadriven.Login.ForgotPasswordTest">
+        <methods>
+          <include name="close"/>
+          <include name="initLogs"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.Login.ForgotPasswordTest -->
+      <class name="com.qtpselenium.framework.datadriven.Login.SupportTest">
+        <methods>
+          <include name="close"/>
+          <include name="initLogs"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.Login.SupportTest -->
+      <class name="com.qtpselenium.framework.datadriven.Login.SignUpTest">
+        <methods>
+          <include name="endTime"/>
+          <include name="initLogs"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.Login.SignUpTest -->
+    </classes>
+  </test> <!-- LandingPageTest(failed) -->
+  <test name="Support(failed)">
+    <classes>
+      <class name="com.qtpselenium.framework.datadriven.Login.LandingPageTest">
+        <methods>
+          <include name="initLogs"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.Login.LandingPageTest -->
+      <class name="com.qtpselenium.framework.datadriven.Login.LoginTest">
+        <methods>
+          <include name="close"/>
+          <include name="endTime"/>
+          <include name="initLogs"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.Login.LoginTest -->
+      <class name="com.qtpselenium.framework.datadriven.Login.ForgotPasswordTest">
+        <methods>
+          <include name="close"/>
+          <include name="initLogs"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.Login.ForgotPasswordTest -->
+      <class name="com.qtpselenium.framework.datadriven.Login.SupportTest">
+        <methods>
+          <include name="close"/>
+          <include name="supporttest" invocation-numbers="0 1"/>
+          <include name="initLogs"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.Login.SupportTest -->
+      <class name="com.qtpselenium.framework.datadriven.Login.SignUpTest">
+        <methods>
+          <include name="endTime"/>
+          <include name="initLogs"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.Login.SignUpTest -->
+    </classes>
+  </test> <!-- Support(failed) -->
+  <test name="LoginTest(failed)">
+    <classes>
+      <class name="com.qtpselenium.framework.datadriven.Login.LandingPageTest">
+        <methods>
+          <include name="initLogs"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.Login.LandingPageTest -->
+      <class name="com.qtpselenium.framework.datadriven.Login.LoginTest">
+        <methods>
+          <include name="logintest" invocation-numbers="0"/>
+          <include name="close"/>
+          <include name="endTime"/>
+          <include name="initLogs"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.Login.LoginTest -->
+      <class name="com.qtpselenium.framework.datadriven.Login.ForgotPasswordTest">
+        <methods>
+          <include name="close"/>
+          <include name="initLogs"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.Login.ForgotPasswordTest -->
+      <class name="com.qtpselenium.framework.datadriven.Login.SupportTest">
+        <methods>
+          <include name="close"/>
+          <include name="initLogs"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.Login.SupportTest -->
+      <class name="com.qtpselenium.framework.datadriven.Login.SignUpTest">
+        <methods>
+          <include name="endTime"/>
+          <include name="initLogs"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.Login.SignUpTest -->
+    </classes>
+  </test> <!-- LoginTest(failed) -->
+  <test name="ForgotPassword(failed)">
+    <classes>
+      <class name="com.qtpselenium.framework.datadriven.Login.LandingPageTest">
+        <methods>
+          <include name="initLogs"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.Login.LandingPageTest -->
+      <class name="com.qtpselenium.framework.datadriven.Login.ForgotPasswordTest">
+        <methods>
+          <include name="close"/>
+          <include name="forgotpasswordtest" invocation-numbers="0"/>
+          <include name="initLogs"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.Login.ForgotPasswordTest -->
+      <class name="com.qtpselenium.framework.datadriven.Login.LoginTest">
+        <methods>
+          <include name="close"/>
+          <include name="endTime"/>
+          <include name="initLogs"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.Login.LoginTest -->
+      <class name="com.qtpselenium.framework.datadriven.Login.SupportTest">
+        <methods>
+          <include name="close"/>
+          <include name="initLogs"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.Login.SupportTest -->
+      <class name="com.qtpselenium.framework.datadriven.Login.SignUpTest">
+        <methods>
+          <include name="endTime"/>
+          <include name="initLogs"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.Login.SignUpTest -->
+    </classes>
+  </test> <!-- ForgotPassword(failed) -->
+  <test name="SignUp(failed)">
+    <classes>
+      <class name="com.qtpselenium.framework.datadriven.Login.LandingPageTest">
+        <methods>
+          <include name="initLogs"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.Login.LandingPageTest -->
+      <class name="com.qtpselenium.framework.datadriven.Login.LoginTest">
+        <methods>
+          <include name="close"/>
+          <include name="endTime"/>
+          <include name="initLogs"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.Login.LoginTest -->
+      <class name="com.qtpselenium.framework.datadriven.Login.ForgotPasswordTest">
+        <methods>
+          <include name="close"/>
+          <include name="initLogs"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.Login.ForgotPasswordTest -->
+      <class name="com.qtpselenium.framework.datadriven.Login.SupportTest">
+        <methods>
+          <include name="close"/>
+          <include name="initLogs"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.Login.SupportTest -->
+      <class name="com.qtpselenium.framework.datadriven.Login.SignUpTest">
+        <methods>
+          <include name="signuptest" invocation-numbers="0 1 2"/>
+          <include name="endTime"/>
+          <include name="initLogs"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.Login.SignUpTest -->
+    </classes>
+  </test> <!-- SignUp(failed) -->
+</suite> <!-- Failed suite [Login] -->

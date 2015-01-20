@@ -1,0 +1,10 @@
+2015-01-20 14:40:38,534 DEBUG [SupportTest]  Landing Page -Support Regression Test End Date/Time 
+2015-01-20 14:40:38,534 DEBUG [SupportTest] Current date is  20/1/2015 Current time is  2 : 40 : 38
+2015-01-20 14:40:38,564 DEBUG [SupportTest] Validating runmode for : SupportTest in suite LoginSuite
+2015-01-20 14:40:38,604 DEBUG [SupportTest] Skipping the test : SupportTest inside the suite  : LoginSuite
+2015-01-20 14:40:38,604 DEBUG [SupportTest]  Landing Page Support Regression Test End Date/Time 
+2015-01-20 14:40:38,604 DEBUG [SupportTest] Current date is  20/1/2015 Current time is  2 : 40 : 38
+2015-01-20 14:40:38,604 DEBUG [SupportTest] Validating runmode for : SupportTest in suite LoginSuite
+2015-01-20 14:40:38,634 DEBUG [SupportTest] Skipping the test : SupportTest inside the suite  : LoginSuite
+2015-01-20 14:40:38,634 DEBUG [SupportTest]  Landing Page Support Regression Test End Date/Time 
+2015-01-20 14:40:38,634 DEBUG [SupportTest] Current date is  20/1/2015 Current time is  2 : 40 : 38

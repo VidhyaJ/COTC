@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.param th {vertical-align:bottom}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><th colspan="7">My Project</th></tr>
+<tr><th colspan="7">Login</th></tr>
+<tr><td style="text-align:left;padding-right:2em">SignUp</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">3</td><td class="numi">0</td><td class="numi">0.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">Support</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">0</td><td class="numi">0.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">LoginTest</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">0</td><td class="numi">0.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">ForgotPassword</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">0</td><td class="numi">0.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">LandingPageTest</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">0</td><td class="numi">0.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">Sendmail</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">5.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="total"><td>Total</td>
+<td class="numi">1</td><td class="numi">1</td><td class="numi_attn">8</td><td class="numi">0</td><td class="numi">6.0 seconds</td><td colspan="2">&nbsp;</td></tr>
+</table>
+<a id="summary"></a>
+<table cellspacing=0 cellpadding=0 class="passed">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Time<br/>(Msecs)</th></tr>
+<tr><th colspan="4">My Project</th></tr>
+<tr><th colspan="4">Login</th></tr>
+<tr><th colspan="4">SignUp &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="3">com.qtpselenium.framework.datadriven.Login.SignUpTest<td><a href="#m1"><b>signuptest</b>  </a></td><td class="numi">3</td><td class="numi">80</td></tr><tr class="skippedodd"><td><a href="#m2"><b>signuptest</b>  </a></td><td class="numi">3</td><td class="numi">80</td></tr><tr class="skippedodd"><td><a href="#m3"><b>signuptest</b>  </a></td><td class="numi">3</td><td class="numi">80</td></tr>
+<tr><th colspan="4">Support &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="2">com.qtpselenium.framework.datadriven.Login.SupportTest<td><a href="#m4"><b>supporttest</b>  </a></td><td class="numi">2</td><td class="numi">80</td></tr><tr class="skippedodd"><td><a href="#m5"><b>supporttest</b>  </a></td><td class="numi">2</td><td class="numi">80</td></tr>
+<tr><th colspan="4">LoginTest &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="1">com.qtpselenium.framework.datadriven.Login.LoginTest<td><a href="#m6"><b>logintest</b>  </a></td><td class="numi">1</td><td class="numi">20</td></tr>
+<tr><th colspan="4">ForgotPassword &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="1">com.qtpselenium.framework.datadriven.Login.ForgotPasswordTest<td><a href="#m7"><b>forgotpasswordtest</b>  </a></td><td class="numi">1</td><td class="numi">30</td></tr>
+<tr><th colspan="4">LandingPageTest &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="1">com.qtpselenium.framework.datadriven.Login.LandingPageTest<td><a href="#m8"><b>landingpageTest</b>  </a></td><td class="numi">1</td><td class="numi">40</td></tr>
+<tr><th colspan="4">Sendmail &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">com.qtpselenium.framework.datadriven.util.SendMailTest<td><a href="#m9"><b>sendmailtest</b>  </a></td><td class="numi">1</td><td class="numi">5155</td></tr>
+</table>
+<h1>SignUp</h1>
+<a id="m1"></a><h2>com.qtpselenium.framework.datadriven.Login.SignUpTest:signuptest</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">{name=vidhya, Runmode=Y, domainname=vidhyaautomate, Expected_Result=FAILURE, username=vidhya@.com, Browser=Mozilla, Result=}</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Skipping the test : SignUpTest inside the suite  : LoginSuite</p>
+com.qtpselenium.framework.datadriven.TestBase.validateRunmodes(TestBase.java:93)
+<br/>at com.qtpselenium.framework.datadriven.Login.SignUpTest.signuptest(SignUpTest.java:32)
+<br/>36 lines not shown
+</td></tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m2"></a><h2>com.qtpselenium.framework.datadriven.Login.SignUpTest:signuptest</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">{name=vidhya, Runmode=Y, domainname=vidhyaautomat1, Expected_Result=FAILURE, username=vidhya@.com, Browser=Mozilla, Result=}</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Skipping the test : SignUpTest inside the suite  : LoginSuite</p>
+com.qtpselenium.framework.datadriven.TestBase.validateRunmodes(TestBase.java:93)
+<br/>at com.qtpselenium.framework.datadriven.Login.SignUpTest.signuptest(SignUpTest.java:32)
+<br/>36 lines not shown
+</td></tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m3"></a><h2>com.qtpselenium.framework.datadriven.Login.SignUpTest:signuptest</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">{name=vidhya, Runmode=Y, domainname=vidhyaautomat2, Expected_Result=SUCCESS, username=vidhya@i-waves.com, Browser=Mozilla, Result=}</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Skipping the test : SignUpTest inside the suite  : LoginSuite</p>
+com.qtpselenium.framework.datadriven.TestBase.validateRunmodes(TestBase.java:93)
+<br/>at com.qtpselenium.framework.datadriven.Login.SignUpTest.signuptest(SignUpTest.java:32)
+<br/>36 lines not shown
+</td></tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Support</h1>
+<a id="m4"></a><h2>com.qtpselenium.framework.datadriven.Login.SupportTest:supporttest</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">{name=vidhya, Result=, Runmode=Y, Expected_Result=, attachment=N, email=vidhya@i-waves.com, company=Infowave, subject=Automation Testing message1, Browser=Mozilla, message=I am posting a message before login using Automation script and without attachment}</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Skipping the test : SupportTest inside the suite  : LoginSuite</p>
+com.qtpselenium.framework.datadriven.TestBase.validateRunmodes(TestBase.java:93)
+<br/>at com.qtpselenium.framework.datadriven.Login.SupportTest.supporttest(SupportTest.java:33)
+<br/>36 lines not shown
+</td></tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m5"></a><h2>com.qtpselenium.framework.datadriven.Login.SupportTest:supporttest</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">{name=vidhya, Result=, Runmode=Y, Expected_Result=, attachment=Y, email=vidhya@i-waves.com, company=Infowave, subject=Automation Testing message, Browser=Mozilla, message=I am posting a message before login using Automation script and with attachment}</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Skipping the test : SupportTest inside the suite  : LoginSuite</p>
+com.qtpselenium.framework.datadriven.TestBase.validateRunmodes(TestBase.java:93)
+<br/>at com.qtpselenium.framework.datadriven.Login.SupportTest.supporttest(SupportTest.java:33)
+<br/>36 lines not shown
+</td></tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>LoginTest</h1>
+<a id="m6"></a><h2>com.qtpselenium.framework.datadriven.Login.LoginTest:logintest</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">{password=testing1, Runmode=Y, domainname=vidhyaautomate, Expected_Result=SUCCESS, username=vidhya@i-waves.com, Browser=Mozilla, Result=}</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Skipping the test : LoginTest inside the suite  : LoginSuite</p>
+com.qtpselenium.framework.datadriven.TestBase.validateRunmodes(TestBase.java:93)
+<br/>at com.qtpselenium.framework.datadriven.Login.LoginTest.logintest(LoginTest.java:32)
+<br/>36 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>ForgotPassword</h1>
+<a id="m7"></a><h2>com.qtpselenium.framework.datadriven.Login.ForgotPasswordTest:forgotpasswordtest</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">{Runmode=Y, domainname=http://vidhyaautomate.campaignonthecloud.com , username=vidhya@i-waves.com, Browser=Mozilla, Result=}</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Skipping the test : ForgotPasswordTest inside the suite  : LoginSuite</p>
+com.qtpselenium.framework.datadriven.TestBase.validateRunmodes(TestBase.java:93)
+<br/>at com.qtpselenium.framework.datadriven.Login.ForgotPasswordTest.forgotpasswordtest(ForgotPasswordTest.java:29)
+<br/>36 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>LandingPageTest</h1>
+<a id="m8"></a><h2>com.qtpselenium.framework.datadriven.Login.LandingPageTest:landingpageTest</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">{password=testing1, Runmode=Y, domainname=vidhyaautomate, Expected_Result=, username=vidhya@i-waves.com, Browser=Mozilla, Result=}</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Skipping the test : LandingPageTest inside the suite  : LoginSuite</p>
+com.qtpselenium.framework.datadriven.TestBase.validateRunmodes(TestBase.java:93)
+<br/>at com.qtpselenium.framework.datadriven.Login.LandingPageTest.landingpageTest(LandingPageTest.java:52)
+<br/>36 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Sendmail</h1>
+<a id="m9"></a><h2>com.qtpselenium.framework.datadriven.util.SendMailTest:sendmailtest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

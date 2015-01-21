@@ -24,7 +24,7 @@ public class SendMailTest extends TestBase{
     	
                 String[] to={"vidhya@i-waves.com"};
 
-                String[] cc={};
+                String[] cc={"vidhyajayachandran@gmail.com"};
                 String[] bcc={};
 
                 //This is for google
@@ -41,8 +41,8 @@ public class SendMailTest extends TestBase{
                 		            to,
                 		            cc,
                 		            bcc,
-                		            "Automation Reports for COTC : Dry Run for Email Notification",
-                		            "Please find the reports attached.\n Regards\nVidhyaJayachandran",
+                		            "Automation Reports for COTC : Dry Run ",
+                		            "Please find the reports attached.Regards VidhyaJayachandran",
                 		             System.getProperty("user.dir")+"//target//Reports//"+CustomListener.resultFolderName+"\\Results.zip",
                 		        	"Results.zip");
         }

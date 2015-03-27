@@ -22,7 +22,7 @@ public class SupportTest extends TestBase{
 	@BeforeTest
 	public void initLogs(){
 		initLogs(this.getClass());
-		APPLICATION_LOG.debug(" Landing Page -Support Regression Test End Date/Time ");
+		APPLICATION_LOG.debug(" Landing Page ->Support Regression Test Start Date/Time ");
 		getcurrentdate();
 		
 	}

@@ -80,30 +80,16 @@ public class AddGroupTest extends TestBase{
 	         }
 		clear("GroupName_xpath");	
     }
-	 @Test(priority=2)
+	/* @Test(priority=2)
      public void addgroupCancelTest() throws InterruptedException{
 		 
 		 input("GroupName_xpath","CheckCancelGroup");
 	     click("GroupCancel_xpath");
 	     Thread.sleep(3000);
 		 
-	 }
+	 }*/
 	     
-	  	/*sessionData.put("groupnameintable", groupname);
-		  //Thread.sleep(20000L);
-	    
-	   // WebDriverWait wait = new WebDriverWait(driver,40);
-	   // wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='menucontacts_normal']")));
-		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='menucontacts_normal']")));
-		 * //driver.findElement(By.xpath("//*[@id='menucontacts_normal']")).click();
-		 * //System.out.println("Clicked Contacts");
-		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='addnewgroup_div']/table/tbody/tr/td/img]")));
-	    //driver.findElement(By.xpath("//body")).sendKeys(Keys.F5);
-	    //driver.findElement(By.xpath("//*[@id='menucontacts_normal']")).click();
-		 */
-				
-	    
-
+	  
 @AfterClass
 public void close(){
 	if (!(driver==null)){

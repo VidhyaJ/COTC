@@ -2,7 +2,11 @@ package com.qtpselenium.framework.datadriven.Contacts;
 
 import java.util.Hashtable;
 
+import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -13,56 +17,77 @@ import com.qtpselenium.framework.datadriven.util.ErrorUtil;
 import com.qtpselenium.framework.datadriven.util.TestDataProvider;
 
 public class AddGroupTest extends TestBase{
-	/*TO DO
-     * 1.Remove the Thread.sleep and optimise the code to wait for the page load before the contacts can be clicked
-     * 2.Verify Page Title
-     * 3.Verify the confirmation message displayed after Group creation
-     * 4.Create a duplicate group and check validation
-     * 5.Add assertions to the Contacts tab availability and Create New Group image availability.
-     * 6.Handle Exceptions
-     */
 	
-	 /* COMPLETED
-	  * LOGIN , CHOOSE CONTACTS TAB AND ADD TO GROUP IMAGE
-	  * ADD A GROUP
-	  */
-	@BeforeTest
-	public void initLogs(){
-	initLogs(this.getClass());
-	}
+	public static String expectedgroupmessage;
+	public static String actualgroupmessage;
+	public static boolean isloggedin=false;
 	
-	@Test(dataProviderClass=TestDataProvider.class,dataProvider="ContactsSuiteDataProvider")
+ @BeforeTest
+	 public void initLogs(){
+	 initLogs(this.getClass());
+	 APPLICATION_LOG.debug("Executing AddGroup Test");
+ 	}
+	
+
+	@Test(priority=1,dataProviderClass=TestDataProvider.class,dataProvider="ContactsSuiteDataProvider")
 	public void addgrouptest(Hashtable<String,String> table) throws InterruptedException{
-	
-		 APPLICATION_LOG.debug("Executing AddGroup Test");
-		 validateRunmodes("AddGroupTest", Constants.CONTACTS_SUITE, table.get("Runmode"));
-	     //doLogin(table.get(Constants.BROWSER_COL),table.get(Constants.USERNAME_COL),table.get(Constants.PASSWORD_COL));
-	   
-		 Thread.sleep(20000L);
-		 try{
-		 Assert.assertTrue(isElementPresent("ContactsTab_xpath"), "Element not found Contacts Tab");
-		 }catch(Throwable t){
-			 ErrorUtil.addVerificationFailure(t);
-		 }
-		 click("ContactsTab_xpath");
-		
-	     Thread.sleep(3000L);
-	     try{
-	     Assert.assertTrue(isElementPresent("CreateNewGroup_xpath"), "Element not found CreateNewGroup icon"); 
-	     }catch(Throwable t){
-	    	 ErrorUtil.addVerificationFailure(t);
-	     }
-	     
-	    
-	     click("CreateNewGroup_xpath");
+
+		  validateRunmodes("AddGroupTest", Constants.CONTACTS_SUITE, table.get("Runmode"));
+		  if (!isloggedin){
+		    doLogin(table.get(Constants.BROWSER_COL),table.get(Constants.USERNAME_COL),table.get(Constants.PASSWORD_COL));
+	        Thread.sleep(20000L);
+	        
+		  try{
+			 Assert.assertTrue(isElementPresent("ContactsTab_xpath"), "Element not found Contacts Tab");
+			 }catch(Throwable t){
+				 ErrorUtil.addVerificationFailure(t);
+				 APPLICATION_LOG.debug("Contacts Tab not found." );
+				 
+			 }
+		    
+			 click("ContactsTab_xpath");
+			 Thread.sleep(3000L);
+			 isloggedin=true;
+			 try{
+		     Assert.assertTrue(isElementPresent("CreateNewGroup_xpath"), "Element not found CreateNewGroup icon"); 
+		     }catch(Throwable t){
+		    	 ErrorUtil.addVerificationFailure(t);
+		    	 APPLICATION_LOG.debug("Create New Group icon is not found." );
+		     }
+		  }
+		 		  
+		 click("CreateNewGroup_xpath");
 	     input("GroupName_xpath",table.get("groupname"));
 	     sessionData.put("groupnamecreated", table.get("groupname"));
-	     System.out.println("The group name created in Group is : " +sessionData.get("groupnamecreated"));
+	     APPLICATION_LOG.debug("The group name entered is  : " +sessionData.get("groupnamecreated"));
 	     click("GroupSave_xpath");
-	     
-	     
-	    
-	
+	     Thread.sleep(3000);
+	     try{
+	     expectedgroupmessage=table.get("message");
+		 actualgroupmessage=driver.findElement(By.xpath("//*[@id='display_error_msg']")).getText();
+		 
+		 if ((table.get(Constants.EXPECTEDRESULT_COL).equals("FAILURE")) && (expectedgroupmessage.equalsIgnoreCase(actualgroupmessage)))
+			   APPLICATION_LOG.debug("Group Name already exists.Message displayed is :"+actualgroupmessage );
+		 else if ((table.get(Constants.EXPECTEDRESULT_COL).equals("SUCCESS")) && (expectedgroupmessage.equalsIgnoreCase(actualgroupmessage)))
+			  APPLICATION_LOG.debug("Group Created.Message displayed is  :  " +actualgroupmessage);
+		 else if ((table.get(Constants.EXPECTEDRESULT_COL).equals("FAILURE")) && (expectedgroupmessage.equalsIgnoreCase(actualgroupmessage)))
+			 APPLICATION_LOG.debug("Duplicate group name created: " +actualgroupmessage);
+		 else if ((table.get(Constants.EXPECTEDRESULT_COL).equals("FAILURE")) && !(expectedgroupmessage.equalsIgnoreCase(actualgroupmessage)))
+			 APPLICATION_LOG.debug("Duplicate group names not accepted.");
+      }catch(Throwable e){
+	         //System.out.println("Inside exception catch");
+             APPLICATION_LOG.debug("Group Creation failed .Exception in Groups: " +e);
+	         }
+		clear("GroupName_xpath");	
+    }
+	 @Test(priority=2)
+     public void addgroupCancelTest() throws InterruptedException{
+		 
+		 input("GroupName_xpath","CheckCancelGroup");
+	     click("GroupCancel_xpath");
+	     Thread.sleep(3000);
+		 
+	 }
 	     
 	  	/*sessionData.put("groupnameintable", groupname);
 		  //Thread.sleep(20000L);
@@ -77,6 +102,18 @@ public class AddGroupTest extends TestBase{
 	    //driver.findElement(By.xpath("//*[@id='menucontacts_normal']")).click();
 		 */
 				
-	    }
+	    
+
+@AfterClass
+public void close(){
+	if (!(driver==null)){
+		driver.quit();
+		}
+	APPLICATION_LOG.debug(" Add Group Test End Date/Time ");
+	getcurrentdate();
+	
+}
+
+
 	    
 	}

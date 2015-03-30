@@ -2,8 +2,6 @@
 <suite name="Login">
 
 
-
-
 <test name="LandingPageTest">
     <classes>
         <class name="com.qtpselenium.framework.datadriven.Login.LandingPageTest" ></class>  

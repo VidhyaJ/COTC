@@ -1,3 +1,0 @@
-2015-01-20 14:40:38,464 DEBUG [LandingPageTest] Executing LandingPage Test
-2015-01-20 14:40:38,464 DEBUG [LandingPageTest] Validating runmode for : LandingPageTest in suite LoginSuite
-2015-01-20 14:40:38,504 DEBUG [LandingPageTest] Skipping the test : LandingPageTest inside the suite  : LoginSuite

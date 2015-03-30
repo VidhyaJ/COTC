@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>LoginTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jan 20 15:06:44 IST 2015</td>
+<td>Started on:</td><td>Fri Mar 27 11:13:23 IST 2015</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (50 ms)</td>
+<tr><td>Total time:</td><td>46 seconds (46712 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -76,13 +76,143 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.qtpselenium.framework.datadriven.Login.LoginTest.logintest()'><b>logintest</b><br>Test class: com.qtpselenium.framework.datadriven.Login.LoginTest<br>Parameters: {password=testing1, Runmode=Y, domainname=vidhyaautomate, Expected_Result=SUCCESS, username=vidhya@i-waves.com, Browser=Mozilla, Result=}</td>
-<td><div><pre>org.testng.SkipException: Skipping the test : LoginTest inside the suite  : LoginSuite
-	at com.qtpselenium.framework.datadriven.TestBase.validateRunmodes(TestBase.java:93)
-	at com.qtpselenium.framework.datadriven.Login.LoginTest.logintest(LoginTest.java:32)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1523457748", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1523457748'><pre>org.testng.SkipException: Skipping the test : LoginTest inside the suite  : LoginSuite
-	at com.qtpselenium.framework.datadriven.TestBase.validateRunmodes(TestBase.java:93)
-	at com.qtpselenium.framework.datadriven.Login.LoginTest.logintest(LoginTest.java:32)
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+xtensions.json	DEBUG	Starting write
+1427435004447	addons.manager	DEBUG	shutdown
+1427435004448	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1427435004449	addons.xpi	DEBUG	shutdown
+1427435004449	addons.xpi-utils	DEBUG	shutdown
+1427435004450	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1427435004451	addons.manager	DEBUG	Calling shutdown blocker for OpenH264Provider
+1427435004453	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1427435004703	DeferredSave.extensions.json	DEBUG	Write succeeded
+1427435004703	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 16
+1427435004704	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1427435004708	addons.manager	DEBUG	Async provider shutdown done
+1427435004965	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/XPIProvider.jsm: [&quot;XPIProvider&quot;]
+1427435004965	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/LightweightThemeManager.jsm: [&quot;LightweightThemeManager&quot;]
+1427435004967	addons.xpi	DEBUG	startup
+1427435004968	addons.xpi	INFO	Mapping fxdriver@googlecode.com to C:\Users\Vidhya\AppData\Local\Temp\anonymous5172121388818311661webdriver-profile\extensions\fxdriver@googlecode.com
+1427435004968	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\Vidhya\AppData\Local\Temp\anonymous5172121388818311661webdriver-profile\extensions\webdriver-staging
+1427435004969	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1427435004969	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1427435004969	addons.xpi	DEBUG	Skipping unavailable install location app-system-local
+1427435004969	addons.xpi	DEBUG	checkForChanges
+1427435004969	addons.xpi	DEBUG	Loaded add-on state from prefs: {&quot;app-profile&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;d&quot;:&quot;C:\\Users\\Vidhya\\AppData\\Local\\Temp\\anonymous5172121388818311661webdriver-profile\\extensions\\fxdriver@googlecode.com&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;2.43.1&quot;,&quot;st&quot;:1427435003682,&quot;mt&quot;:1427435003662}},&quot;app-global&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;d&quot;:&quot;C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;36.0.4&quot;,&quot;st&quot;:1426991728900,&quot;mt&quot;:1426991728856}}}
+1427435004970	addons.xpi	DEBUG	getModTime: Recursive scan of fxdriver@googlecode.com
+1427435004975	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1427435004975	addons.xpi	DEBUG	getInstallState changed: false, state: {&quot;app-profile&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;d&quot;:&quot;C:\\Users\\Vidhya\\AppData\\Local\\Temp\\anonymous5172121388818311661webdriver-profile\\extensions\\fxdriver@googlecode.com&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;2.43.1&quot;,&quot;st&quot;:1427435003682,&quot;mt&quot;:1427435003662}},&quot;app-global&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;d&quot;:&quot;C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;36.0.4&quot;,&quot;st&quot;:1426991728900,&quot;mt&quot;:1426991728856}}}
+1427435004976	addons.xpi	DEBUG	No changes found
+1427435004978	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1427435004978	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1427435004979	addons.manager	DEBUG	Registering shutdown blocker for OpenH264Provider
+1427435004979	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+JavaScript error: file:///C:/Users/Vidhya/AppData/Local/Temp/anonymous5172121388818311661webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js, line 11464: TypeError: this.server_ is undefined
+JavaScript error: chrome://fxdriver/content/server.js, line 38: NS_ERROR_XPC_CI_RETURNED_FAILURE: Component returned failure code: 0x80570015 (NS_ERROR_XPC_CI_RETURNED_FAILURE) [nsIJSCID.createInstance]
+*** Blocklist::_preloadBlocklistFile: blocklist is disabled
+1427435006439	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;Lenovo-PC&apos;, ip: &apos;10.37.4.215&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_20&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:130)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:114)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:191)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:182)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at com.qtpselenium.framework.datadriven.TestBase.openBrowser(TestBase.java:103)
+	at com.qtpselenium.framework.datadriven.TestBase.doLogin(TestBase.java:270)
+	at com.qtpselenium.framework.datadriven.Login.LoginTest.logintest(LoginTest.java:36)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+xtensions.json	DEBUG	Starting write
+1427435004447	addons.manager	DEBUG	shutdown
+1427435004448	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1427435004449	addons.xpi	DEBUG	shutdown
+1427435004449	addons.xpi-utils	DEBUG	shutdown
+1427435004450	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1427435004451	addons.manager	DEBUG	Calling shutdown blocker for OpenH264Provider
+1427435004453	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1427435004703	DeferredSave.extensions.json	DEBUG	Write succeeded
+1427435004703	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 16
+1427435004704	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1427435004708	addons.manager	DEBUG	Async provider shutdown done
+1427435004965	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/XPIProvider.jsm: [&quot;XPIProvider&quot;]
+1427435004965	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/LightweightThemeManager.jsm: [&quot;LightweightThemeManager&quot;]
+1427435004967	addons.xpi	DEBUG	startup
+1427435004968	addons.xpi	INFO	Mapping fxdriver@googlecode.com to C:\Users\Vidhya\AppData\Local\Temp\anonymous5172121388818311661webdriver-profile\extensions\fxdriver@googlecode.com
+1427435004968	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\Vidhya\AppData\Local\Temp\anonymous5172121388818311661webdriver-profile\extensions\webdriver-staging
+1427435004969	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1427435004969	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1427435004969	addons.xpi	DEBUG	Skipping unavailable install location app-system-local
+1427435004969	addons.xpi	DEBUG	checkForChanges
+1427435004969	addons.xpi	DEBUG	Loaded add-on state from prefs: {&quot;app-profile&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;d&quot;:&quot;C:\\Users\\Vidhya\\AppData\\Local\\Temp\\anonymous5172121388818311661webdriver-profile\\extensions\\fxdriver@googlecode.com&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;2.43.1&quot;,&quot;st&quot;:1427435003682,&quot;mt&quot;:1427435003662}},&quot;app-global&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;d&quot;:&quot;C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;36.0.4&quot;,&quot;st&quot;:1426991728900,&quot;mt&quot;:1426991728856}}}
+1427435004970	addons.xpi	DEBUG	getModTime: Recursive scan of fxdriver@googlecode.com
+1427435004975	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1427435004975	addons.xpi	DEBUG	getInstallState changed: false, state: {&quot;app-profile&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;d&quot;:&quot;C:\\Users\\Vidhya\\AppData\\Local\\Temp\\anonymous5172121388818311661webdriver-profile\\extensions\\fxdriver@googlecode.com&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;2.43.1&quot;,&quot;st&quot;:1427435003682,&quot;mt&quot;:1427435003662}},&quot;app-global&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;d&quot;:&quot;C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;36.0.4&quot;,&quot;st&quot;:1426991728900,&quot;mt&quot;:1426991728856}}}
+1427435004976	addons.xpi	DEBUG	No changes found
+1427435004978	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1427435004978	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1427435004979	addons.manager	DEBUG	Registering shutdown blocker for OpenH264Provider
+1427435004979	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+JavaScript error: file:///C:/Users/Vidhya/AppData/Local/Temp/anonymous5172121388818311661webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js, line 11464: TypeError: this.server_ is undefined
+JavaScript error: chrome://fxdriver/content/server.js, line 38: NS_ERROR_XPC_CI_RETURNED_FAILURE: Component returned failure code: 0x80570015 (NS_ERROR_XPC_CI_RETURNED_FAILURE) [nsIJSCID.createInstance]
+*** Blocklist::_preloadBlocklistFile: blocklist is disabled
+1427435006439	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:118)
+	... 34 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace125844477", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace125844477'><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+xtensions.json	DEBUG	Starting write
+1427435004447	addons.manager	DEBUG	shutdown
+1427435004448	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1427435004449	addons.xpi	DEBUG	shutdown
+1427435004449	addons.xpi-utils	DEBUG	shutdown
+1427435004450	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1427435004451	addons.manager	DEBUG	Calling shutdown blocker for OpenH264Provider
+1427435004453	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1427435004703	DeferredSave.extensions.json	DEBUG	Write succeeded
+1427435004703	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 16
+1427435004704	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1427435004708	addons.manager	DEBUG	Async provider shutdown done
+1427435004965	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/XPIProvider.jsm: [&quot;XPIProvider&quot;]
+1427435004965	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/LightweightThemeManager.jsm: [&quot;LightweightThemeManager&quot;]
+1427435004967	addons.xpi	DEBUG	startup
+1427435004968	addons.xpi	INFO	Mapping fxdriver@googlecode.com to C:\Users\Vidhya\AppData\Local\Temp\anonymous5172121388818311661webdriver-profile\extensions\fxdriver@googlecode.com
+1427435004968	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\Vidhya\AppData\Local\Temp\anonymous5172121388818311661webdriver-profile\extensions\webdriver-staging
+1427435004969	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1427435004969	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1427435004969	addons.xpi	DEBUG	Skipping unavailable install location app-system-local
+1427435004969	addons.xpi	DEBUG	checkForChanges
+1427435004969	addons.xpi	DEBUG	Loaded add-on state from prefs: {&quot;app-profile&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;d&quot;:&quot;C:\\Users\\Vidhya\\AppData\\Local\\Temp\\anonymous5172121388818311661webdriver-profile\\extensions\\fxdriver@googlecode.com&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;2.43.1&quot;,&quot;st&quot;:1427435003682,&quot;mt&quot;:1427435003662}},&quot;app-global&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;d&quot;:&quot;C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;36.0.4&quot;,&quot;st&quot;:1426991728900,&quot;mt&quot;:1426991728856}}}
+1427435004970	addons.xpi	DEBUG	getModTime: Recursive scan of fxdriver@googlecode.com
+1427435004975	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1427435004975	addons.xpi	DEBUG	getInstallState changed: false, state: {&quot;app-profile&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;d&quot;:&quot;C:\\Users\\Vidhya\\AppData\\Local\\Temp\\anonymous5172121388818311661webdriver-profile\\extensions\\fxdriver@googlecode.com&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;2.43.1&quot;,&quot;st&quot;:1427435003682,&quot;mt&quot;:1427435003662}},&quot;app-global&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;d&quot;:&quot;C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;36.0.4&quot;,&quot;st&quot;:1426991728900,&quot;mt&quot;:1426991728856}}}
+1427435004976	addons.xpi	DEBUG	No changes found
+1427435004978	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1427435004978	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1427435004979	addons.manager	DEBUG	Registering shutdown blocker for OpenH264Provider
+1427435004979	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+JavaScript error: file:///C:/Users/Vidhya/AppData/Local/Temp/anonymous5172121388818311661webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js, line 11464: TypeError: this.server_ is undefined
+JavaScript error: chrome://fxdriver/content/server.js, line 38: NS_ERROR_XPC_CI_RETURNED_FAILURE: Component returned failure code: 0x80570015 (NS_ERROR_XPC_CI_RETURNED_FAILURE) [nsIJSCID.createInstance]
+*** Blocklist::_preloadBlocklistFile: blocklist is disabled
+1427435006439	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;Lenovo-PC&apos;, ip: &apos;10.37.4.215&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_20&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:130)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:114)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:191)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:182)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at com.qtpselenium.framework.datadriven.TestBase.openBrowser(TestBase.java:103)
+	at com.qtpselenium.framework.datadriven.TestBase.doLogin(TestBase.java:270)
+	at com.qtpselenium.framework.datadriven.Login.LoginTest.logintest(LoginTest.java:36)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -108,9 +238,47 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+xtensions.json	DEBUG	Starting write
+1427435004447	addons.manager	DEBUG	shutdown
+1427435004448	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1427435004449	addons.xpi	DEBUG	shutdown
+1427435004449	addons.xpi-utils	DEBUG	shutdown
+1427435004450	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1427435004451	addons.manager	DEBUG	Calling shutdown blocker for OpenH264Provider
+1427435004453	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1427435004703	DeferredSave.extensions.json	DEBUG	Write succeeded
+1427435004703	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 16
+1427435004704	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1427435004708	addons.manager	DEBUG	Async provider shutdown done
+1427435004965	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/XPIProvider.jsm: [&quot;XPIProvider&quot;]
+1427435004965	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/LightweightThemeManager.jsm: [&quot;LightweightThemeManager&quot;]
+1427435004967	addons.xpi	DEBUG	startup
+1427435004968	addons.xpi	INFO	Mapping fxdriver@googlecode.com to C:\Users\Vidhya\AppData\Local\Temp\anonymous5172121388818311661webdriver-profile\extensions\fxdriver@googlecode.com
+1427435004968	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\Vidhya\AppData\Local\Temp\anonymous5172121388818311661webdriver-profile\extensions\webdriver-staging
+1427435004969	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1427435004969	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1427435004969	addons.xpi	DEBUG	Skipping unavailable install location app-system-local
+1427435004969	addons.xpi	DEBUG	checkForChanges
+1427435004969	addons.xpi	DEBUG	Loaded add-on state from prefs: {&quot;app-profile&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;d&quot;:&quot;C:\\Users\\Vidhya\\AppData\\Local\\Temp\\anonymous5172121388818311661webdriver-profile\\extensions\\fxdriver@googlecode.com&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;2.43.1&quot;,&quot;st&quot;:1427435003682,&quot;mt&quot;:1427435003662}},&quot;app-global&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;d&quot;:&quot;C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;36.0.4&quot;,&quot;st&quot;:1426991728900,&quot;mt&quot;:1426991728856}}}
+1427435004970	addons.xpi	DEBUG	getModTime: Recursive scan of fxdriver@googlecode.com
+1427435004975	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1427435004975	addons.xpi	DEBUG	getInstallState changed: false, state: {&quot;app-profile&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;d&quot;:&quot;C:\\Users\\Vidhya\\AppData\\Local\\Temp\\anonymous5172121388818311661webdriver-profile\\extensions\\fxdriver@googlecode.com&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;2.43.1&quot;,&quot;st&quot;:1427435003682,&quot;mt&quot;:1427435003662}},&quot;app-global&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;d&quot;:&quot;C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;36.0.4&quot;,&quot;st&quot;:1426991728900,&quot;mt&quot;:1426991728856}}}
+1427435004976	addons.xpi	DEBUG	No changes found
+1427435004978	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1427435004978	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1427435004979	addons.manager	DEBUG	Registering shutdown blocker for OpenH264Provider
+1427435004979	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+JavaScript error: file:///C:/Users/Vidhya/AppData/Local/Temp/anonymous5172121388818311661webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js, line 11464: TypeError: this.server_ is undefined
+JavaScript error: chrome://fxdriver/content/server.js, line 38: NS_ERROR_XPC_CI_RETURNED_FAILURE: Component returned failure code: 0x80570015 (NS_ERROR_XPC_CI_RETURNED_FAILURE) [nsIJSCID.createInstance]
+*** Blocklist::_preloadBlocklistFile: blocklist is disabled
+1427435006439	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:118)
+	... 34 more
 </pre></div></td>
-<td>0</td>
-<td>com.qtpselenium.framework.datadriven.Login.LoginTest@617c74e5</td></tr>
+<td>46</td>
+<td>com.qtpselenium.framework.datadriven.Login.LoginTest@67b6d4ae</td></tr>
 </table><p>
 </body>
 </html>

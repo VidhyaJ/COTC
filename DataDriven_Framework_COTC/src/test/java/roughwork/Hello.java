@@ -20,7 +20,7 @@ public class Hello {
 			
 			// HW
 			String browser = "Mozilla"; // properties
-			WebDriver driver = null;
+		WebDriver driver = null;
 			
 			if(browser.equals("Mozilla"))
 				driver = new FirefoxDriver();
@@ -47,7 +47,7 @@ public class Hello {
  		  
  		//WebElement catBox = driver.findElement(By.xpath("html/body/form/div[5]/div[1]/div/div[2]/div/table/tbody/tr/td[2]"));
  		 // WebElement socialfooter=driver.findElement(By.xpath("//*[@id='footerMenu']/div[2]/div/table/tbody/tr/td[2]/table/tbody/tr[1]/td/table/tbody/tr/td"));
- 		 WebElement socialfooter=driver.findElement(By.xpath("//*[@id='footerMenu']/div[2]/div/table/tbody/tr/td[2]"));
+ 		/* WebElement socialfooter=driver.findElement(By.xpath("//*[@id='footerMenu']/div[2]/div/table/tbody/tr/td[2]"));
  		  List<WebElement> socialsites=socialfooter.findElements(By.tagName("a"));
  		  System.out.println("Social sites size is : " +socialsites.size());
  		 for(int i=0;i<socialsites.size();i++)
@@ -57,7 +57,7 @@ public class Hello {
  	     System.out.println(driver.getCurrentUrl());
  	     driver.navigate().back();
  	     System.out.println("Facebook, twitter, Linkedin, Mixpanel Links opened");
- 	     }
+ 	     }*/
  		 
  		 
  		  
@@ -75,7 +75,7 @@ public class Hello {
  	    driver.navigate().back();
  	    System.out.println("Facebook, twitter, Linkedin, Mixpanel Links opened");
  	    }*/
- 		   driver.quit();
+ 		   //driver.quit();
  		}
  			  
 }

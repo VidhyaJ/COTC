@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite hostname="Lenovo-PC" name="com.qtpselenium.framework.datadriven.Login.SupportTest" tests="2" failures="0" timestamp="20 Jan 2015 09:13:26 GMT" time="0.11" errors="0">
-  <testcase name="supporttest" time="0.04" classname="com.qtpselenium.framework.datadriven.Login.SupportTest">
-    <skipped/>
-  </testcase>
-  <testcase name="supporttest" time="0.04" classname="com.qtpselenium.framework.datadriven.Login.SupportTest">
-    <skipped/>
-  </testcase>
-</testsuite>

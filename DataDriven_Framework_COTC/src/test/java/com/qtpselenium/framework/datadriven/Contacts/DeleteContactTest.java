@@ -15,7 +15,7 @@ import com.qtpselenium.framework.datadriven.util.Constants;
 import com.qtpselenium.framework.datadriven.util.ErrorUtil;
 import com.qtpselenium.framework.datadriven.util.TestDataProvider;
 
-public class DeleteGroupTest extends TestBase{
+public class DeleteContactTest extends TestBase{
 	
 	@BeforeTest
 	public void initLogs(){

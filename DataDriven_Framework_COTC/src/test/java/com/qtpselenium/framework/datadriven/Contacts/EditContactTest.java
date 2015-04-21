@@ -16,7 +16,7 @@ import com.qtpselenium.framework.datadriven.util.Constants;
 import com.qtpselenium.framework.datadriven.util.ErrorUtil;
 import com.qtpselenium.framework.datadriven.util.TestDataProvider;
 
-public class AddGroupTest extends TestBase{
+public class EditContactTest extends TestBase{
 	
 	public static String expectedgroupmessage;
 	public static String actualgroupmessage;

@@ -6,42 +6,65 @@
   </listeners>
   <test name="Add Contact Test(failed)">
     <classes>
-      <class name="com.qtpselenium.framework.datadriven.Contacts.DeleteGroupTest">
+      <class name="com.qtpselenium.framework.datadriven.Contacts.EditContactTest">
+        <methods>
+          <include name="initLogs"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.Contacts.EditContactTest -->
+      <class name="com.qtpselenium.framework.datadriven.Contacts.DeleteContactTest">
         <methods>
           <include name="initLogs"/>
         </methods>
-      </class> <!-- com.qtpselenium.framework.datadriven.Contacts.DeleteGroupTest -->
+      </class> <!-- com.qtpselenium.framework.datadriven.Contacts.DeleteContactTest -->
       <class name="com.qtpselenium.framework.datadriven.Contacts.AddContactTest">
         <methods>
           <include name="addcontacttest" invocation-numbers="0"/>
           <include name="initLogs"/>
         </methods>
       </class> <!-- com.qtpselenium.framework.datadriven.Contacts.AddContactTest -->
-      <class name="com.qtpselenium.framework.datadriven.Contacts.AddGroupTest">
-        <methods>
-          <include name="initLogs"/>
-        </methods>
-      </class> <!-- com.qtpselenium.framework.datadriven.Contacts.AddGroupTest -->
     </classes>
   </test> <!-- Add Contact Test(failed) -->
-  <test name="Delete Group Test(failed)">
+  <test name="Edit Contact Test(failed)">
     <classes>
-      <class name="com.qtpselenium.framework.datadriven.Contacts.DeleteGroupTest">
+      <class name="com.qtpselenium.framework.datadriven.Contacts.EditContactTest">
         <methods>
-          <include name="deletegrouptest" invocation-numbers="0"/>
+          <include name="initLogs"/>
+          <include name="addgrouptest" invocation-numbers="0"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.Contacts.EditContactTest -->
+      <class name="com.qtpselenium.framework.datadriven.Contacts.DeleteContactTest">
+        <methods>
           <include name="initLogs"/>
         </methods>
-      </class> <!-- com.qtpselenium.framework.datadriven.Contacts.DeleteGroupTest -->
+      </class> <!-- com.qtpselenium.framework.datadriven.Contacts.DeleteContactTest -->
       <class name="com.qtpselenium.framework.datadriven.Contacts.AddContactTest">
         <methods>
           <include name="initLogs"/>
         </methods>
       </class> <!-- com.qtpselenium.framework.datadriven.Contacts.AddContactTest -->
-      <class name="com.qtpselenium.framework.datadriven.Contacts.AddGroupTest">
+    </classes>
+  </test> <!-- Edit Contact Test(failed) -->
+  <test name="Delete Contact Test(failed)">
+    <classes>
+      <class name="com.qtpselenium.framework.datadriven.Contacts.EditContactTest">
+        <methods>
+          <include name="initLogs"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.Contacts.EditContactTest -->
+      <class name="com.qtpselenium.framework.datadriven.Contacts.DeleteContactTest">
+        <methods>
+          <include name="deletegrouptest" invocation-numbers="0"/>
+          <include name="initLogs"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.Contacts.DeleteContactTest -->
+      <class name="com.qtpselenium.framework.datadriven.Contacts.AddContactTest">
         <methods>
           <include name="initLogs"/>
         </methods>
-      </class> <!-- com.qtpselenium.framework.datadriven.Contacts.AddGroupTest -->
+      </class> <!-- com.qtpselenium.framework.datadriven.Contacts.AddContactTest -->
     </classes>
-  </test> <!-- Delete Group Test(failed) -->
+  </test> <!-- Delete Contact Test(failed) -->
 </suite> <!-- Failed suite [Contacts] -->

@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.qtpselenium.framework.datadriven.Contacts.AddGroupTest">
+      <class name="com.qtpselenium.framework.datadriven.Contacts.AddContactTest">
         <methods>
-          <include name="close"/>
-          <include name="addgroupCancelTest"/>
+          <include name="addcontacttest" invocation-numbers="0"/>
           <include name="initLogs"/>
         </methods>
-      </class> <!-- com.qtpselenium.framework.datadriven.Contacts.AddGroupTest -->
+      </class> <!-- com.qtpselenium.framework.datadriven.Contacts.AddContactTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
